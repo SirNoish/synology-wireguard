@@ -50,6 +50,7 @@ docker build -t synobuild .
 for ver in ${VERSIONS[@]}; do
     # Create release directory if needed
     mkdir -p target/$ver
+    mkdir -p artifacts/
 
     for arch in ${ARCHS[@]}; do
         echo "Building '$arch'"

@@ -23,7 +23,7 @@ all: $(WG_TARGET) $(WG_QUICK_TARGET) $(WG_MODULE_TARGET)
 
 # Download libmnl source tarball
 $(LIBMNL_TAR):
-	wget https://netfilter.org/projects/libmnl/files/$(LIBMNL_TAR)
+	wget --no-check-certificate https://netfilter.org/projects/libmnl/files/$(LIBMNL_TAR)
 
 # Prepare libmnl for building
 $(LIBMNL_DIR)/Makefile: $(LIBMNL_TAR)

@@ -172,6 +172,8 @@ Now we can build for any platform and DSM version using:
 .. code-block:: bash
 
     sudo docker run --rm --privileged --env PACKAGE_ARCH=<arch> --env DSM_VER=<dsm-ver> -v $(pwd)/artifacts:/result_spk synobuild
+    Ex: sudo docker run --rm --privileged --env PACKAGE_ARCH=bromolow --env DSM_VER=6.2 -v $(pwd)/wireguard:/result_spk synobuild
+    Ex: sudo docker run --rm --privileged --env PACKAGE_ARCH=apollolake --env DSM_VER=7.0 -v $(pwd)/wireguard:/result_spk synobuild
 
 You should replace ``<arch>`` with your NAS's package arch. Using
 `this table <https://www.synology.com/en-global/knowledgebase/DSM/tutorial/General/What_kind_of_CPU_does_my_NAS_have>`_

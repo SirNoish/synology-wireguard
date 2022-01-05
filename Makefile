@@ -36,7 +36,7 @@ $(LIBMNL_DIR)/src/.libs/libmnl.a: $(LIBMNL_DIR)/Makefile
 
 # Download WireGuard source tarball
 $(WIREGUARD_TAR):
-	wget https://git.zx2c4.com/wireguard-linux-compat/snapshot/$(WIREGUARD_TAR)
+	wget --no-check-certificate https://git.zx2c4.com/wireguard-linux-compat/snapshot/$(WIREGUARD_TAR)
 
 $(WIREGUARD_TOOLS_TAR):
 	wget --no-check-certificate https://git.zx2c4.com/wireguard-tools/snapshot/$(WIREGUARD_TOOLS_TAR)

@@ -39,7 +39,7 @@ if [[ ! -d /pkgscripts-ng ]] || [ -z "$(ls -A /pkgscripts-ng)" ]; then
         clone_args="-b DSM$DSM_VER"
         export PRODUCT="DSM"
     fi
-    git clone ${clone_args} https://github.com/SynologyOpenSource/pkgscripts-ng
+    git clone ${clone_args} https://github.com/SirNoish/pkgscripts-ng
 else
     echo "Existing pkgscripts-ng repo found. Pulling latest from origin."
     cd /pkgscripts-ng
